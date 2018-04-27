@@ -1,7 +1,7 @@
 var player;
 var foodCells = [];
-const numberOfFoodCells = 20
-const velocityMagnitude = 2
+const numberOfFoodCells = 200;
+const velocityMagnitude = 2;
 
 function setup() {
 	createCanvas(600, 600);
@@ -13,10 +13,11 @@ function setup() {
 
 function draw() {
 	background(0);
+
+	translate(width/2-player.position.x, height/2-player.position.y);
+	player.update();
 	player.show();
-	let playerVelocity = player.getVelocity();
 	for(let i = foodCells.length -1; i > 0; i--) {
-		foodCells[i].move(p5.Vector.mult(playerVelocity, -1));
 		foodCells[i].show();
 	}
 }
