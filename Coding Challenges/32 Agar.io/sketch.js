@@ -1,7 +1,7 @@
 var player;
 var foodCells = [];
-const numberOfFoodCells = 20
-const velocityMagnitude = 2
+const numberOfFoodCells = 200;
+const velocityMagnitude = 2;
 
 function setup() {
 	createCanvas(600, 600);

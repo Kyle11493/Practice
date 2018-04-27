@@ -1,6 +1,6 @@
 function Cell(radius, position) {
 	this.radius = radius || 20;
-	this.position = position || createVector(random(this.radius, width - this.radius), random(this.radius, height - this.radius));
+	this.position = position || createVector(random(-width, width*2), random(-height, height*2));
 	this.area = 0;
 	this.c = color(random(255), random(255), random(255));
 }

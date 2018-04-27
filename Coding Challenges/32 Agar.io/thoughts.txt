@@ -1,0 +1,8 @@
+Create an object focused on the center of the canvas at startup and move it along with the other cells
+use that object to determine the relative position of the player object to the rest of the board
+
+
+update the player object's position as normal, but create player's object in a seperate method
+
+
+
